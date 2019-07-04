@@ -1,0 +1,625 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+   
+}
+
+///   --------------------------------JUMBOTRON + NAV
+.searchBar{
+    .searchBarSec{
+        border: 0px;
+        background-color: rgba(0, 0, 0, 0.486);
+        border-radius: 25px !important;
+        color: white;
+    }
+}
+.fa-search {
+    right: 0;
+    color: white;
+}
+
+.nav-link:hover {
+    .imgContainerShop .card-img-top:hover, .myToggle {
+        cursor: pointer;
+    }
+}
+
+
+.myToggle {
+    width: 30px;
+    height: 10px;
+    border-bottom: 5px solid white;
+    margin: 0 5px;
+}
+
+.mySlides {
+    position: absolute;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2;
+    display: none;
+    filter: brightness(40%);
+    &:first-child {
+        display: block;
+    }
+    img  {
+        width: 100%;
+    }
+}
+
+#navbarSupportedContent{
+    .nav-item{
+        &:hover{
+            background-color: #dc3545 !important;
+        }
+    }
+    .dropdown-menu{
+        margin-top: 5px;
+    }
+}
+
+body {
+    overflow: hidden;
+}
+
+// Slide animation 
+.mySlides {
+    display: none;
+}
+.jumboSlide{
+   animation: 1s jumboSlide forwards;
+   display: block;
+   
+  }
+
+.jumboSlideOut {
+    animation: 1s jumboSlideOut forwards;
+}
+
+
+  
+  @keyframes jumboSlide {
+    from {left: 100vw;}
+    to {left: 0vw;}
+  }
+
+  @keyframes jumboSlideOut {
+    0% {left: 0vw;}
+    100% { left: -100vw;}
+
+
+  }
+  // dot active hover effect 
+
+  .jumboActive, .myToggle:hover {
+    border-color: #dc3545;
+  }
+
+  /* Media Queries */
+
+  @media screen and (max-width: 800px) {
+  .jumbotron-fluid h1 {
+      font-size: 18px !important;
+  }
+    .jumbotron-fluid span {
+        font-size: 20px !important;
+    }
+    .jumbotron-fluid p, .jumbotron-fluid button {
+        display: none;
+    }
+    .mySlides img {
+        height: 100%;
+    }
+
+  }
+
+
+  
+  // ----------------------------------------------------------------Check 18 ans MODAL ----------
+
+  .areYou18 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    z-index: 3;
+
+    .modal-18 {
+
+        width: 700px;
+        height: 200px;
+        background:  rgba(0,0,0,0.9);
+        color: #dc3545;
+    }
+
+    #ageButton {
+        background: #dc3545;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+        font-weight: bolder;
+    }
+    
+
+}
+
+//  -------------------------------------------__FOOTER
+
+.Footer {
+    background: black;
+}
+
+
+// ----------------------------------trailer shop
+
+.trailerContent {
+    background: black;
+}
+
+//:::::::::::::::::::::::::::::::::::STYLE BUTTON UP
+
+#buttonUp{
+    height:50px !important;
+    width:50px !important;
+    margin-left: 90%;
+    margin-bottom:10%;
+    background-color:black;
+    border: 4px solid red;
+    border-radius: 50%;
+    text-decoration: none !important;  
+    text-align: center;
+    line-height: 3.5;
+    color:white;
+    position: fixed;
+    bottom: 10px;
+    right: 71px;
+    }
+
+#fleche a{
+    text-decoration: none !important;  
+    color:white;
+}
+
+//css anim menu social network 
+
+.anim:hover img {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.imgsocial {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 0;
+
+}
+
+.nav2 {
+
+    position: relative;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.aSocial {
+    padding-right: 50px;
+    border-radius: 30px;
+    color: white;
+    width: 200px;
+    height: 60px;
+    background-color: #425b9d;
+    margin-left: -200px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.aSocial2:hover {
+    color: white;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    transition: -webkit-transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    -webkit-transform: translateX(100px);
+    -ms-transform: translateX(100px);
+    transform: translateX(100px);
+}
+
+
+.aSocial2 {
+    padding-right: 50px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    width: 200px;
+    height: 60px;
+    background-color: #04A7FE;
+    margin-left: -200px;
+    text-align: center;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.aSocial:hover {
+    color: white;
+    transition: -webkit-transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    transform: translateX(100px);
+}
+
+.aSocial3 {
+    padding-right: 50px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    width: 200px;
+    height: 60px;
+    background-color: #EA4C89;
+    margin-left: -200px;
+    text-align: center;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.aSocial3:hover {
+    color: white;
+
+    transition: -webkit-transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    transform: translateX(100px);
+}
+
+.aSocial4 {
+    padding-right: 50px;
+    border-radius: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    width: 200px;
+    height: 60px;
+    background-color: #FD3E11;
+    margin-left: -200px;
+    text-align: center;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+}
+
+.aSocial4:hover {
+    color: white;
+
+    transition: -webkit-transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+    transform: translateX(100px);
+}
+
+
+
+
+#social-net{
+    top:10px;
+    position: sticky;
+    width: 0px;
+    z-index: 10;
+    ul {
+        position: absolute;
+        top: 0;
+       
+    }
+}
+
+//END css anim menu social network 
+
+
+
+//modal 
+#firstMovieModal, #secondMovieModal, #thirdMovieModal, #fourthMovieModal, #fifthMovieModal{
+    .modal-content{
+        background: #dc3545;
+        color: white;
+        .modal-header, .modal-body{
+            border: 0px;
+            .close{
+                color: white;
+            }
+        }
+    }
+}
+
+#exampleModal{
+    .modal-content{
+        background: #dc3546;
+        color: white;
+        border: 0px;
+        .modal-header{
+            background-color: white;
+            color: #dc3545;
+        }
+        .text-decoration-none{
+            color: white;
+        }
+        #compte1{
+            background: white;
+            color: #dc3545;
+            border: 0px;
+        }
+        .modal-header, .modal-footer{
+            border: 0px;
+            .close{
+                color: white;
+            }
+            .btn-secondary{
+                background-color: #801e27;
+                border: 0px;
+            }
+            .btn-primary{
+                background: white;
+                color: #dc3545;
+                border: 0px;
+            }
+        }
+    }
+}
+
+// -----------------modal créer un compte
+
+#exampleModalScrollable{
+    .modal-content{
+        background: #dc3546;
+        color: white;
+        border: 0px;
+        .modal-header{
+            background-color: white;
+            color: #dc3545;
+        }
+        .text-decoration-none{
+            color: white;
+        }
+        #compte1{
+            background: white;
+            color: #dc3545;
+            border: 0px;
+        }
+        .modal-header, .modal-footer{
+            border: 0px;
+            .close{
+                color: white;
+            }
+            .btn-secondary{
+                background-color: #801e27;
+                border: 0px;
+            }
+            .btn-primary{
+                background: white;
+                color: #dc3545;
+                border: 0px;
+            }
+        }
+    }
+}
+
+// ------------------------ trailer shop movies
+/*.trailerContent{
+    color: rgb(53, 106, 175);
+}*/
+
+
+// ------------------------ footer
+
+.footer {
+    background-color: rgb(24, 24, 24);
+    .form-control {
+        border: 0px;
+        border-radius: 0px;
+    }
+    .form-control-plaintext {
+        color: rgb(192, 39, 39);
+        padding-left: 15px;
+        font-size: 2em;
+    }
+    .btn {
+        background-color: rgb(192, 39, 39);
+        color: white;
+        border: 0px;
+        border-radius: 0px;
+        &:hover {
+            background-color: white;
+            color: rgb(192, 39, 39);
+        }
+    }
+}
+
+.release {
+    thead {
+        th {
+            border: 0px;
+            color: rgb(209, 209, 209);
+        }
+    }
+    tbody {
+        td {
+            border: 0px;
+            color: rgb(114, 114, 114);
+            padding: 10px;
+            &:hover {
+                cursor: pointer;
+                color: rgb(209, 209, 209);
+            }
+        }
+    }
+}
+
+.movies {
+    thead {
+        th {
+            border: 0px;
+            color: rgb(209, 209, 209);
+        }
+    }
+    tbody {
+        td {
+            border: 0px;
+            color: rgb(114, 114, 114);
+            padding: 10px;
+            &:hover {
+                cursor: pointer;
+                color: rgb(209, 209, 209);
+            }
+        }
+    }
+}
+
+.previewmovies {
+    thead {
+        th {
+            border: 0px;
+            color: rgb(209, 209, 209);
+        }
+    }
+    tbody {
+        .badge-secondary {
+            border-radius: 0px;
+            background-color: rgb(73, 73, 73);
+            &:hover {
+                background-color: rgb(168, 168, 168);
+                color: rgb(37, 37, 37);
+            }
+        }
+    }
+}
+
+.latestmovies {
+    thead {
+        th {
+            border: 0px;
+            color: rgb(209, 209, 209);
+        }
+    }
+    tbody {
+        td {
+            border: 0px;
+            color: rgb(114, 114, 114);
+            padding: 7px;
+            &:hover {
+                cursor: pointer;
+                color: rgb(209, 209, 209);
+            }
+        }
+    }
+}
+
+.greyrect {
+    width: 125px;
+    height: 50px;
+    background-color: grey;
+}
+
+.allezcine {
+    thead {
+        th {
+            border: 0px;
+            color: rgb(209, 209, 209);
+        }
+        span {
+            color: rgb(192, 39, 39);
+        }
+    }
+    tbody {
+        td {
+            color: rgb(114, 114, 114);
+            padding: 0px;
+        }
+        img {
+            width: 65px;
+            overflow: hidden;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.social {
+    .txt {
+        color: white;
+        text-align: center;
+    }
+
+    .icons {
+
+        .fa-facebook-f,
+        .fa-twitter,
+        .fa-linkedin-in,
+        .fa-youtube,
+        .fa-google-plus-g {
+            color: white;
+            font-size: 2em;
+            margin: 10px;
+            padding: 5px;
+            border: 3px solid white;
+            width: 35px;
+            height: 35px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        .fa-facebook-f:hover{
+            color: rgb(60,90,153);
+            transform: scale(1.1, 1.1);
+            transition: 0.4s;
+        }
+        .fa-twitter:hover{
+            color: rgb(29,161,242);
+            transform: scale(1.1, 1.1);
+            transition: 0.4s;
+        }
+        .fa-linkedin-in:hover{
+            color: rgb(0,119,181);
+            transform: scale(1.1, 1.1);
+            transition: 0.4s;
+        }
+        .fa-youtube:hover{
+            color: rgb(255,0,0);
+            transform: scale(1.1, 1.1);
+            transition: 0.4s;
+        }
+        .fa-google-plus-g:hover{
+            color: rgb(219,68,55);
+            transform: scale(1.1, 1.1);
+            transition: 0.4s;
+        }
+    }
+}
